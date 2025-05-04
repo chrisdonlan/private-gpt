@@ -1,3 +1,5 @@
+include mk/*.mk
+
 # Any args passed to the make script, use with $(call args, default_value)
 args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
 
